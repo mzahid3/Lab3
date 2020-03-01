@@ -16,15 +16,50 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
  * 2. Remove the margin in Firefox and Safari.
  */
 
+h1 {
+    font-family: cursive;
+    font-size: 2em; 
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+p{
+    font-family: cursive;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+input[type=email], textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: seagreen;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
+  font-size: 100; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  margin: 0; /* 2 */   
+    background-color: aquamarine;
 }
 
 /**
@@ -35,6 +70,7 @@ textarea {
 button,
 input { /* 1 */
   overflow: visible;
+    color: pink;
 }
 
 /**
@@ -196,6 +232,10 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+  background-color: magenta;
+  padding-left: 1em;
+  padding-top: 5em;
+  margin: inherit;
 }
 
 label {

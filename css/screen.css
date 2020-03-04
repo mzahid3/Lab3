@@ -46,6 +46,8 @@ label {
 
 }
 
+
+
 button,
 input,
 optgroup,
@@ -89,7 +91,7 @@ button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+    -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -168,7 +170,33 @@ textarea {
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+visibility: hidden;
 }
+input[type="checkbox"] + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+input[type="checkbox"]:checked + label:before {
+  background: #b4aeae;
+  color: #333;
+  content: "\2713";
+  text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -228,14 +256,10 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
-  background-color: #D3D3D3	;
+  background-color: #b7b4b4	;
   padding-left: 1em;
   padding-top: 5em;
   margin: inherit;
-}
-
-label {
-  display: block;
 }
 
 /* ===== LAYOUT STYLES ====== */

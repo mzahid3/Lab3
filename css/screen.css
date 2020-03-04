@@ -7,6 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-family: cursive;
     color: #505050;
     text-align: center;
+    padding: inherit;
     padding-bottom: 1em;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
@@ -260,6 +261,28 @@ html {
   padding-left: 1em;
   padding-top: 5em;
   margin: inherit;
+}
+
+@media screen and (min-width: 480px){
+    .taking, h1, input[type=submit], input[type=text], textarea {
+        width: 100%;
+        margin-top: 0;
+
+    }
+}
+
+@media screen and (min-width: 780px){
+    input[type=submit]{
+        width:30%;
+        padding: 15px 15px 15px 15px;
+    
+    }
+    input[type=email] {
+              width:40%;
+        padding: 6px 6px 6px 6px;
+        
+        
+    }
 }
 
 /* ===== LAYOUT STYLES ====== */

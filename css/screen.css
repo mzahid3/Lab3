@@ -177,15 +177,15 @@ textarea {
 visibility: hidden;
 }
 input[type="checkbox"] + label:before {
-  border: 1px solid #333;
-  content: "\00a0";
-  display: inline-block;
-  font: 16px/1em sans-serif;
-  height: 16px;
-  margin: 0 .25em 0 0;
-  padding: 0;
-  vertical-align: top;
-  width: 16px;
+  border: 1px solid #333;/* 1 */
+  content: "\00a0";/* 1 */
+  display: inline-block;/* 1 */
+  font: 16px/1em sans-serif;/* 1 */
+  height: 16px;/* 1 */
+  margin: 0 .25em 0 0;/* 1 */
+  padding: 0;/* 1 */
+  vertical-align: top;/* 1 */
+  width: 16px;/* 1 */
 }
 input[type="checkbox"]:checked + label:before {
   background: #b4aeae;

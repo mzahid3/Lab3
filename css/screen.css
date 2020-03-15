@@ -106,7 +106,7 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
+  border-style: none;/* 1 */
   padding: 0;
 }
 
@@ -126,9 +126,9 @@ button:-moz-focusring,
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;/* 1 */
+  margin: 0 2px;/* 1 */
+  padding: 0.35em 0.625em 0.75em;/* 1 */
 }
 
 /**
@@ -162,7 +162,7 @@ progress {
  */
 
 textarea {
-  overflow: auto;
+  overflow: auto;/* 1 */
 }
 
 /**
@@ -188,17 +188,17 @@ input[type="checkbox"] + label:before {
   width: 16px;/* 1 */
 }
 input[type="checkbox"]:checked + label:before {
-  background: #b4aeae;
-  color: #333;
-  content: "\2713";
-  text-align: center;
+  background: #b4aeae;/* 1 */
+  color: #333;/* 1 */
+  content: "\2713";/* 1 */
+  text-align: center;/* 1 */
 }
 input[type="checkbox"]:checked + label:after {
-  font-weight: bold;
+  font-weight: bold;/* 1 */
 }
 
 input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
+    outline: rgb(59, 153, 252) auto 5px;/* 1 */
 }
 
 
